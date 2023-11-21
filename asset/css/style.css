@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    border-style: hidden;
+    width: 350px;
+}
+
+li {
+    list-style: none;
+    /* float: left; */
+
+}
+
+a {
+
+    text-decoration: none;
+}
+.color-silver{
+    color: #ccc !important;
+}
+
+:focus {
+    outline: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header {}
+
+/* header content */
+.header-content {
+    background-color: #106f85;
+    padding: 25px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-logo>a>img {
+    height: 39px;
+}
+
+.header-title {
+    padding: 10px 30px;
+    width: 470px;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid #f0f2f5;
+}
+
+.header-title .header-icon-search {
+    float: right;
+    color: #ccc;
+}
+
+.header-icon .header-icon-cart {
+    color: #fff;
+    font-size: 40px;
+}
+
+/* header menu */
+.menu {
+    background-color: #fff;
+    /* đưa các thẻ len 1 hàng */
+    display: flex;
+    align-items: center;
+}
+
+.menu-item {
+    /* chọn thằng cha làm gốc */
+    position: relative;
+    padding: 15px;
+}
+
+.menu-link {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.menu-link:hover {
+    color: #106f85;
+}
+
+/* sub-menu */
+.child-menu {
+    position: absolute;
+    color: #000;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    /* ẩn menu con */
+    opacity: 0;
+    visibility: hidden;
+    transition: .25s linear;
+}
+
+.main-menu {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.main-menu:hover .child-menu {
+    /* hiện menu con */
+    background-color: #fff;
+    height: 400px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.child-menu .child-menu-list li a {
+    color: #000;
+}
+
+.child-menu .child-menu-list li :hover {
+    color: #106f85;
+}
+
+.child-menu .child-menu-list li {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* content */
+.img-container img {
+    width: 100%;
+    /* Điều chỉnh kích thước của khung hình */
+    overflow: hidden;
+    /* Ẩn phần nằm ngoài khung hình */
+}
+
+.four-img-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+
+}
+
+.container .four-img-container a img {
+    min-width: 290px;
+    width: 23%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+
+/* .container .four-img-container a img:last-child {
+    margin-right: 0;
+} */
+
+/* section */
+/* section deal */
+.banner-deal{
+}
+ .section-1{
+    width: 100%;
+    
+}
+ .section .banner-deal {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    width: 100%;
+}
+.section-deal{
+    display: flex;
+}
+/* section left */
+.section .section-deal-left{
+    width: 40%;
+}
+.section-deal-left  .section-deal-icon li{
+    color: #fff;
+    padding: 10px 20px;
+}
+.section-deal-icon :hover{
+    background-color: #0c7891   ;
+    cursor: pointer;
+}
+.section-deal-left  .section-deal-icon li i{
+    font-size: 40px;
+    margin-bottom:20px ;
+}
+.section-deal-left  .section-deal-icon li p{
+    font-size: 15px;
+    margin-bottom:20px ;
+}
+.section-deal-icon{
+ 
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+
+/* section right */
+.section .section-deal-right{
+    width: 60%;
+ padding-bottom: 50px;
+    background-color: #fff   ;
+    position: relative;
+}
+.section-deal-content{
+    max-width: 100%;
+    margin: -20px 30px;
+    display: flex;
+}
+.section-deal-item{
+    background-image: url(http://4758.webvua.com/bizweb.dktcdn.net/100/369/704/themes/741072/assets/dailydeal.png);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    padding: 35px 35px;
+    width: 5%;
+}
+.section-deal-item-icon{
+    float: right;
+    margin: -55px 30px;  
+}
+.section-deal-item-icon :hover{
+    background-color: #106f85;
+    cursor: pointer;
+}
+.icon-angle-deal{
+    width: 30px;
+    margin: 5px 5px;
+}
+.button-deal{
+    background-color: #fff;
+    border: none;
+    box-shadow: 6px 8px 25px 0px #888888;
+    border-radius: 5px;
+    margin-left:5px;
+}
+
+/* section deal content */
+.section-deal-content-img{
+    background-image: url(https://hinhanh.webvua.com/images/item/4758/resize/2020020322102.jpg);
+    background-size: cover;
+    padding: 120px 120px;
+    width: 40%;
+}
+.section-deal-content-img:hover{
+    cursor: pointer;
+}
+.section-deal-content-img:hover .vnd1{
+    background-color: #000 !important;
+}
+.section-deal-content-img:hover .title-deal{
+    color: #0c7891;
+}
+
+.section-deal-content-title{
+    margin: 10px -100px 0 30px;
+}
+.vnd{
+    display: flex;
+}
+.vnd1{
+    margin-right: 20px;
+    color: #0c7891;
+    font-weight: 600 !important;
+}
+.button-buy-deal{
+    padding: 10px 10px;
+    background-color: #939393;
+    color: #fff;
+    border: none;
+}
+.button-buy-deal:hover{
+    background-color: #106f85;
+    cursor: pointer;
+}
+.section-deal-content-title li{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* section 2 */
+.blue{ color: #0c7891;}
+
+.pd-20{
+    padding: 20px 0;
+ 
+}
+.section-product{
+    width: 100%;
+    /* height: 890px;
+    background-color: aquamarine; */
+    margin-top: 15px;
+    margin-bottom: 30px;
+
+}
+.center-name-prod{
+    text-align: center;
+}
+.name-prod{
+    color: #0c7891;
+    text-transform: uppercase;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+    font-weight: bold;
+    display: inline-block;
+    margin: 20px 0;
+}
+.img-prod >img{
+
+    max-width: 290px;
+    cursor: pointer;
+}
+.in4-prod :hover{
+    background-color: #0c7891;
+    color: #fff;
+}
+.full-prod{
+    display: flex;
+}
+.in4-prod {
+    padding: 10px;
+    border: 2px solid #f0f0f0;
+    margin: 7.5px;
+}
+.price-prod{
+    font-size: 14px;
+}
+.price-prod li{
+    margin-top: 10px;
+}
+
+.section-bedroom{
+    display: grid;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
